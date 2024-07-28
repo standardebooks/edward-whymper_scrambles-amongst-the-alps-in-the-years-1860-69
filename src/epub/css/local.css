@@ -1,2 +1,387 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
+
+p span.i1{
+	padding-left: 2em;
+	text-indent: -1em;
+}
+
+p span.i4{
+	padding-left: 8em;
+	text-indent: -1em;
+}
+
+/* All epigraphs */
+[epub|type~="epigraph"]{
+	font-style: italic;
+	hyphens: none;
+	-epub-hyphens: none;
+}
+
+[epub|type~="epigraph"] em,
+[epub|type~="epigraph"] i{
+	font-style: normal;
+}
+
+[epub|type~="epigraph"] cite{
+	font-style: normal;
+	font-variant: small-caps;
+	margin-top: 1em;
+}
+
+[epub|type~="epigraph"] cite i{
+	font-style: italic;
+}
+/* End all epigraphs */
+
+/* Full-page epigraphs */
+section[epub|type~="epigraph"]{
+	text-align: center;
+}
+
+section[epub|type~="epigraph"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+	text-align: initial;
+}
+
+@supports(display: flex){
+	section[epub|type~="epigraph"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	section[epub|type~="epigraph"] > *{
+		margin: 0;
+	}
+
+	section[epub|type~="epigraph"] > * + *{
+		margin-top: 3em;
+	}
+}
+/* End full-page epigraphs */
+
+footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+figure.full-page{
+	break-after: page;
+	break-before: page;
+	break-inside: avoid;
+	margin: 0;
+	max-height: 100vh;
+	text-align: center;
+}
+
+figure.left{
+	float: left;
+	margin: 0.5em 0.5em 0.5em 0;
+	width: 45%;
+}
+
+figure.right{
+	float: right;
+	margin: 0.5em 0 0.5em 0.5em;
+	width: 45%;
+}
+
+@supports(display: flex){
+	figure.full-page{
+		display: flex;
+		flex-direction: column;
+	}
+
+	figure.full-page img{
+		height: 100vh;
+		object-fit: contain;
+	}
+}
+
+/* If the image is meant to be aligned block-level with the text, use this selector... */
+figure{
+	break-inside: avoid;
+	margin: 1em 40px;
+	text-align: center;
+}
+
+/* In all cases, also include the below styles */
+figure{
+	break-inside: avoid;
+}
+
+figure img{
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+figcaption{
+	font-size: .75em;
+	font-style: italic;
+	margin: 1em;
+}
+
+figcaption p + p{
+	text-indent: 0;
+}
+
+#poem-snow-bound span:first-child{
+	margin-left: 7em;
+}
+
+/* tables in text and footnotes */
+section table{
+	break-inside: avoid;
+	margin: 1em auto;
+}
+
+th,
+td{
+	font-weight: normal;
+	padding: 0.1em 0.5em;
+}
+
+thead th{
+	padding-bottom: 0.6em;
+}
+
+th{
+	font-weight: normal;
+}
+
+th.year,
+td.year{
+	text-align: center;
+}
+
+th.number,
+td.number,
+th.distance,
+td.distance{
+	text-align: right;
+}
+
+td.number,
+td.distance,
+td.thickness{
+	text-wrap: nowrap;
+}
+
+table .ditto{
+	visibility: hidden;
+}
+
+table .ditto::before{
+	content: "  ”";
+	display: inline-block;
+	visibility: initial;
+	width: 0;
+}
+
+table .ditto.short::before{
+	content: " ”";
+}
+
+#table-3-1 td{
+	vertical-align: bottom;
+}
+
+#table-3-1 td.first{
+	text-indent: 1em;
+}
+
+#table-3-1 td.equals{
+	width: 3em;
+}
+
+#table-3-1 tr.total td.distance{
+	border-top: 1px solid #000;
+	padding-top: 2px;
+}
+
+#table-3-2 th{
+	padding: 0.1em 2em 0.1em 0;
+}
+
+#table-3-2 tbody th{
+	text-align: left;
+}
+
+#table-3-2 td{
+	padding-right: 2em;
+	text-align: center;
+}
+
+#chapter-6 section{
+	margin-bottom: 0.75em;
+	margin-top: 0.75em;
+}
+
+#chapter-6 section p:first-child{
+	text-indent: 1em;
+}
+
+#table-11-1 th{
+	vertical-align: bottom;
+}
+
+#chapter-16 .side-by-side{
+	margin: 1em 1.5em;
+}
+
+#chapter-16 .side-by-side blockquote{
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0;
+	padding: 0 1em;
+	vertical-align: top;
+	width: 49%;
+}
+
+/* appendix E and F */
+table.ascents{
+	border-bottom: 2px solid #000;
+	border-spacing: 0;
+	border-top: 2px solid #000;
+	font-size: 0.8em;
+}
+
+table.ascents th,
+table.ascents td{
+	padding-top: 0.6em;
+	text-align: initial;
+	vertical-align: top;
+}
+
+table.ascents thead th{
+	vertical-align: bottom;
+}
+
+table.ascents tbody tr:first-child th,
+table.ascents tbody tr:first-child td{
+	border-top: 1px solid #000;
+}
+
+table.ascents tbody tr:last-child th,
+table.ascents tbody tr:last-child td{
+	padding-bottom: 0.6em;
+}
+
+table.ascents .number{
+	text-align: center;
+}
+
+table.ascents .date,
+table.ascents .names,
+table.ascents .height{
+	white-space: nowrap;
+}
+
+#note-68 th{
+	text-align: center;
+}
+
+#note-68 td{
+	vertical-align: top;
+}
+
+#note-68 ul{
+	margin: 0;
+}
+
+#note-72 th{
+	font-weight: normal;
+	text-align: left;
+}
+
+#note-72 span.group-number{
+	display: inline-block;
+	width: 1.5em;
+}
+
+#note-72 td{
+	padding-left: 1em;
+	text-align: right;
+}
+
+#note-72 td:first-child{
+	width: 1em;
+}
+
+#note-72 tfoot th{
+	text-align: right;
+}
+
+#note-72 tfoot tr:first-child td:last-child{
+	border-top: 1px solid #000;
+	padding-top: 2px;
+}
+
+#note-74 .from,
+#note-74 .to{
+	text-align: center;
+}
+
+#note-74 .distance,
+#note-74 .thickness{
+	max-width: 8em;
+	text-align: right;
+}
+
+#note-74 .no-decimals::after{
+	content: ".00";
+	visibility: hidden;
+}
+
+#note-76 table{
+	border-bottom: 2px solid #000;
+	border-spacing: 0;
+	border-top: 2px solid #000;
+	margin: 1em 0;
+}
+
+#note-76 th,
+#note-76 td{
+	padding: 2px 8px;
+}
+
+#note-76 th{
+	text-align: center;
+}
+
+#note-76 tbody tr:first-child th,
+#note-76 tbody tr:first-child td,
+#note-76 tfoot tr:first-child td{
+	border-top: 1px solid #000;
+}
+
+#note-76 tr:first-child th,
+#note-76 tr:first-child td{
+	padding-top: 5px;
+}
+
+#note-76 tr:last-child th,
+#note-76 tr:last-child td{
+	padding-bottom: 5px;
+}
+
+#note-76 .distance.total{
+	padding-right: 10px;
+}
+
+#note-76 tr.total td{
+	text-align: right;
+}
+
+#note-232 img{
+	max-width: 90%;
+}
