@@ -1,13 +1,44 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+/* Poetry basics */
+[epub|type~="z3998:verse"] p{
+	text-align: initial;
+	text-indent: 0;
+}
+
+[epub|type~="z3998:verse"] p > span{
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+[epub|type~="z3998:verse"] p > span + br{
+	display: none;
+}
+
+[epub|type~="z3998:verse"] p + p{
+	margin-top: 1em;
+}
+
+/* Poem indentation */
 p span.i1{
 	padding-left: 2em;
 	text-indent: -1em;
 }
 
-p span.i4{
+p span.i2{
+	padding-left: 7em;
+	text-indent: -1em;
+}
+
+p span.i3{
 	padding-left: 8em;
+	text-indent: -1em;
+}
+
+p span.i4{
+	padding-left: 10em;
 	text-indent: -1em;
 }
 
@@ -154,10 +185,6 @@ figcaption{
 
 figcaption p + p{
 	text-indent: 0;
-}
-
-#poem-snow-bound span:first-child{
-	margin-left: 7em;
 }
 
 /* Note at the end of Chapter 3 */
