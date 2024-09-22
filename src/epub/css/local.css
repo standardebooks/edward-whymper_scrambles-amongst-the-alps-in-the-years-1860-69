@@ -464,6 +464,127 @@ section section header + p{
 	margin-left: 20px;
 }
 
+/* Chapter 3, notes 51/52/53, table */
+#note-51 table,
+#note-52 table,
+#note-53 table{
+	font-size: 0.8em;
+	margin: 1em auto;
+}
+
+#note-51 th,
+#note-51 td,
+#note-52 th,
+#note-52 td,
+#note-53 th,
+#note-53 td{
+	font-variant-numeric: tabular-nums;
+	font-weight: normal;
+	padding: 0.1em 0.5em;
+	text-align: initial;
+}
+
+/* Chapter 3, note 51, table */
+#note-51 td{
+	text-align: right;
+	vertical-align: bottom;
+}
+
+#note-51 td:nth-child(1){
+	padding-left: 0;
+	vertical-align: top;
+	width: 1.5em;
+}
+
+#note-51 tfoot th{
+	text-align: right;
+}
+
+#note-51 tfoot tr:first-child td:last-child{
+	border-top: 1px solid #000;
+	padding-top: 2px;
+}
+
+/* Chapter 3, note 52, table */
+#note-52 td:nth-child(1){
+	text-align: right;
+}
+
+#note-52 td:nth-child(3),
+#note-52 td:nth-child(5){
+	text-align: center;
+}
+
+#note-52 thead th:nth-child(2),
+#note-52 thead th:nth-child(4),
+#note-52 thead th:nth-child(5),
+#note-52 td:nth-child(4),
+#note-52 td:nth-child(6),
+#note-52 td:nth-child(7){
+	max-width: 8em;
+	text-align: right;
+}
+
+/* Chapter 3, note 53, table */
+#note-53 table{
+	border-bottom: 2px solid #000;
+	border-spacing: 0;
+	border-top: 2px solid #000;
+	max-width: 50em;
+}
+
+#note-53 th{
+	text-align: center;
+}
+
+#note-53 tbody tr:first-child th,
+#note-53 tbody tr:first-child td{
+	border-top: 1px solid #000;
+}
+
+#note-53 tr:first-child th,
+#note-53 tr:first-child td{
+	padding-top: 0.5em;
+}
+
+#note-53 tr:last-child th,
+#note-53 tr:last-child td{
+	padding-bottom: 0.5em;
+}
+
+#note-53 thead tr:first-child th,
+#note-53 thead tr:nth-child(2) th:nth-child(4),
+#note-53 thead tr:nth-child(2) th:nth-child(6),
+#note-53 tbody th:first-child{
+	text-align: center;
+}
+
+#note-53 th,
+#note-53 td{
+	text-align: right;
+}
+
+#note-53 tbody:nth-child(2) td[rowspan],
+#note-53 tbody:nth-child(3) td[rowspan],
+#note-53 tbody:nth-child(4) td:nth-child(3),
+#note-53 tbody:nth-child(4) td:nth-child(5),
+#note-53 tbody:nth-child(4) td:nth-child(7){
+	line-height: 1.75;
+	text-align: center;
+}
+
+#note-53 tbody:nth-child(2) td[rowspan]::before,
+#note-53 tbody:nth-child(3) td[rowspan]::before{
+	content: "|\A ";
+	white-space: pre;
+}
+
+#note-53 tbody:nth-child(2) td[rowspan]::after,
+#note-53 tbody:nth-child(3) td[rowspan]::after{
+	content: "\A |";
+	white-space: pre;
+}
+
 #note-203 img{
 	max-width: 90%;
 }
