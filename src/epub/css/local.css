@@ -217,6 +217,10 @@ figcaption p + p{
 	text-indent: 0;
 }
 
+figcaption i{
+	font-style: normal;
+}
+
 /* Nested figures */
 figure figure{
 	margin: 0 0 0.5em 0;
