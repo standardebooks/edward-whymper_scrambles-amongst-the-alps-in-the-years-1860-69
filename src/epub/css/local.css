@@ -235,6 +235,22 @@ section > aside > header + *{
 	margin-top: 1.5em;
 }
 
+/* Shared table CSS */
+table span.ditto{
+	visibility: hidden;
+}
+
+table span.ditto::before{
+	content: "  ”";
+	display: inline-block;
+	visibility: initial;
+	width: 0;
+}
+
+table span.ditto.short::before{
+	content: " ”";
+}
+
 /* First table in Chapter 3 */
 #chapter-3 > table:nth-of-type(1){
 	border-spacing: 0;
@@ -264,17 +280,6 @@ section > aside > header + *{
 #chapter-3 > table:nth-of-type(1) th:first-child{
 	max-width: 30em;
 	max-width: 60ch;
-}
-
-#chapter-3 table span.ditto{
-	visibility: hidden;
-}
-
-#chapter-3 table span.ditto::before{
-	content: "      ”";
-	display: inline-block;
-	visibility: initial;
-	width: 0;
 }
 
 td.distance{
@@ -363,21 +368,6 @@ tr.total td.distance{
 #chapter-11 td:nth-child(5){
 	text-align: center;
 	vertical-align: bottom;
-}
-
-#chapter-11 table span.ditto{
-	visibility: hidden;
-}
-
-#chapter-11 table span.ditto::before{
-	content: "  ”";
-	display: inline-block;
-	visibility: initial;
-	width: 0;
-}
-
-#chapter-11 table span.ditto.short::before{
-	content: " ”";
 }
 
 #preface-1 footer time{
