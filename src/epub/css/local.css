@@ -293,7 +293,7 @@ table span.ditto.short::before{
 
 #chapter-3 > table:nth-of-type(1) tbody:nth-child(2) tr:last-child td:nth-last-child(2),
 #chapter-3 > table:nth-of-type(1) tbody:nth-child(3) tr:last-child td:nth-last-child(2){
-	border-top: 1px solid #000;
+	border-top: 1px solid;
 }
 
 #chapter-3 > table:nth-of-type(1) span.ditto:nth-of-type(1)::before{
@@ -406,9 +406,9 @@ section section header + p{
 /* Appendix D and E */
 #appendix-d table,
 #appendix-e table{
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid;
 	border-spacing: 0;
-	border-top: 2px solid #000;
+	border-top: 2px solid;
 	font-size: 0.8em;
 }
 
@@ -432,7 +432,7 @@ section section header + p{
 #appendix-d tbody tr:first-child td,
 #appendix-e tbody tr:first-child th,
 #appendix-e tbody tr:first-child td{
-	border-top: 1px solid #000;
+	border-top: 1px solid;
 	padding-top: 0.6em;
 }
 
@@ -501,7 +501,7 @@ section section header + p{
 }
 
 #note-51 tfoot tr:first-child td:last-child{
-	border-top: 1px solid #000;
+	border-top: 1px solid;
 	padding-top: 2px;
 }
 
@@ -527,9 +527,9 @@ section section header + p{
 
 /* Chapter 3, note 53, table */
 #note-53 table{
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid;
 	border-spacing: 0;
-	border-top: 2px solid #000;
+	border-top: 2px solid;
 	max-width: 50em;
 }
 
@@ -539,7 +539,7 @@ section section header + p{
 
 #note-53 tbody tr:first-child th,
 #note-53 tbody tr:first-child td{
-	border-top: 1px solid #000;
+	border-top: 1px solid;
 }
 
 #note-53 tr:first-child th,
