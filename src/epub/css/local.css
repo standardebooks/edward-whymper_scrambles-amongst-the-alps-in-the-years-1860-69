@@ -42,6 +42,10 @@ p span.i4{
 	text-indent: -1em;
 }
 
+[epub|type~="se:temperature"]{
+	font-variant: all-small-caps;
+}
+
 /* All epigraphs */
 [epub|type~="epigraph"]{
 	font-style: italic;
