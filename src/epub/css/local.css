@@ -254,8 +254,8 @@ table .ditto.short::before{
 }
 
 #chapter-6 section{
-	margin-bottom: 0.75em;
-	margin-top: 0.75em;
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 #chapter-6 section p:first-child{
