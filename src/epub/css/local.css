@@ -266,6 +266,10 @@ table .ditto.short::before{
 	vertical-align: bottom;
 }
 
+#table-11-1 td.name{
+	white-space: nowrap;
+}
+
 #chapter-16 .side-by-side{
 	margin: 1em 1.5em;
 }
