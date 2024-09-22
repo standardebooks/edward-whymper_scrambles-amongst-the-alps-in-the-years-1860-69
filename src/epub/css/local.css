@@ -369,6 +369,12 @@ table.ascents + p{
 	margin-top: 1em;
 }
 
+/* Reference list in Appendix F */
+#appendix-f ol{
+	list-style: upper-roman;
+	margin-left: 20px;
+}
+
 #note-232 img{
 	max-width: 90%;
 }
