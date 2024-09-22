@@ -317,19 +317,6 @@ tr.total td.distance{
 	text-indent: 1em;
 }
 
-#chapter-16 .side-by-side{
-	margin: 1em 1.5em;
-}
-
-#chapter-16 .side-by-side blockquote{
-	box-sizing: border-box;
-	display: inline-block;
-	margin: 0;
-	padding: 0 1em;
-	vertical-align: top;
-	width: 49%;
-}
-
 #note-232 img{
 	max-width: 90%;
 }
