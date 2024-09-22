@@ -170,6 +170,63 @@ section > aside > header + *{
 	margin-top: 1.5em;
 }
 
+/* First table in Chapter 3 */
+#chapter-3 > table:nth-of-type(1){
+	border-spacing: 0;
+	break-inside: avoid;
+}
+
+#chapter-3 > table:nth-of-type(1) th,
+#chapter-3 > table:nth-of-type(1) td{
+	padding-bottom: 0.1em;
+	padding-right: 0.5em;
+	vertical-align: top;
+}
+
+#chapter-3 > table:nth-of-type(1) th{
+	font-weight: normal;
+	text-align: initial;
+}
+
+#chapter-3 > table:nth-of-type(1) tbody:nth-child(1) th{
+	text-indent: 1em;
+}
+
+#chapter-3 > table:nth-of-type(1) tbody:nth-child(2) tr.total th{
+	text-align: right;
+}
+
+#chapter-3 > table:nth-of-type(1) th:first-child{
+	max-width: 30em;
+	max-width: 60ch;
+}
+
+#chapter-3 table span.ditto{
+	visibility: hidden;
+}
+
+#chapter-3 table span.ditto::before{
+	content: "      ”";
+	display: inline-block;
+	visibility: initial;
+	width: 0;
+}
+
+td.distance{
+	padding-left: 0.5em;
+	text-align: right;
+	white-space: nowrap;
+	word-break: keep-all;
+}
+
+td.ditto{
+	text-align: center;
+}
+
+tr.total td.distance{
+	border-top: 1px solid #000;
+}
+
 #preface-2 section header p{
 	font-variant: small-caps;
 	margin: 2em 0 1em 0;
