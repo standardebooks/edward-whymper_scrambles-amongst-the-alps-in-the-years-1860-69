@@ -30,49 +30,85 @@
 		<link href="onix.xml" media-type="application/xml" properties="onix" rel="record"/>
 		<dc:title id="title">Scrambles Amongst the Alps in the Years 1860–69</dc:title>
 		<meta property="file-as" refines="#title">Scrambles Amongst the Alps in the Years 1860–69</meta>
-		<dc:subject id="subject-1">SUBJECT_1</dc:subject>
-		<dc:subject id="subject-2">SUBJECT_2</dc:subject>
+		<meta property="title-type" refines="#title">main</meta>
+		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years 1860–1869</meta>
+		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years Eighteen Sixty to Sixty-Nine</meta>
+		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years Eighteen Sixty to Eighteen Sixty-Nine</meta>
+		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years 1860-69</meta>
+		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years 1860-1869</meta>
+		<dc:title id="title-short">Scrambles Amongst the Alps</dc:title>
+		<meta property="file-as" refines="#title-short">Scrambles Amongst the Alps</meta>
+		<meta property="title-type" refines="#title-short">short</meta>
+		<dc:subject id="subject-1">Whymper, Edward, 1840-1911</dc:subject>
+		<dc:subject id="subject-2">Mountaineering</dc:subject>
+		<dc:subject id="subject-3">Mountaineering--Alps</dc:subject>
+		<dc:subject id="subject-4">Mountaineers--Biography</dc:subject>
+		<dc:subject id="subject-5">Alps--Description and travel</dc:subject>
 		<meta property="authority" refines="#subject-1">LCSH</meta>
-		<meta property="term" refines="#subject-1">LCSH_ID_1</meta>
+		<meta property="term" refines="#subject-1">n84228331</meta>
 		<meta property="authority" refines="#subject-2">LCSH</meta>
-		<meta property="term" refines="#subject-2">LCSH_ID_2</meta>
-		<meta property="se:subject">TAG</meta>
-		<dc:description id="description">DESCRIPTION</dc:description>
+		<meta property="term" refines="#subject-2">sh85087816</meta>
+		<meta property="authority" refines="#subject-3">LCSH</meta>
+		<meta property="term" refines="#subject-3">Unknown</meta>
+		<meta property="authority" refines="#subject-4">LCSH</meta>
+		<meta property="term" refines="#subject-4">sh2008108044</meta>
+		<meta property="authority" refines="#subject-5">LCSH</meta>
+		<meta property="term" refines="#subject-5">sh2007101024</meta>
+		<meta property="se:subject">Memoir</meta>
+		<meta property="se:subject">Nonfiction</meta>
+		<meta property="se:subject">Travel</meta>
+		<dc:description id="description">A classic in early mountaineering literature, describing the first ascent of the Matterhorn and other climbs in the Alps.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			LONG_DESCRIPTION
+			&lt;p&gt;In &lt;i&gt;Scrambles Amongst the Alps&lt;/i&gt;, English author, illustrator, and mountaineer &lt;a href="https://standardebooks.org/ebooks/edward-whymper"&gt;Edward Whymper&lt;/a&gt; recounts his mountaineering adventures in the Alps, culminating in the historic first ascent of the Matterhorn in 1865. This expedition, and its tragic ending, marked the beginning of the silver age of alpinism, and Whymper’s book has since become a classic in early mountaineering literature.&lt;/p&gt;
+			&lt;p&gt;First published in 1871, &lt;i&gt;Scrambles Amongst the Alps&lt;/i&gt; presents an account of Whymper’s travels, combining the stories of his ascents with descriptions of French, Italian, and Swiss mountaineering culture. The book is illustrated with numerous engravings, based on drawings made by the author during his expeditions.&lt;/p&gt;
+			&lt;p&gt;This ebook is based on the fifth edition, printed in 1900, which closely follows the first edition but includes several small corrections and updates from the author, adds additional engravings, and extends the Appendix with a history of later ascents of the Matterhorn.&lt;/p&gt;
 		</meta>
-		<dc:language>LANG</dc:language>
-		<dc:source>PG_URL</dc:source>
-		<dc:source>IA_URL</dc:source>
-		<meta property="se:production-notes">PRODUCTION_NOTES</meta>
+		<dc:language>en-GB</dc:language>
+		<!-- transcription of the first edition -->
+		<dc:source>https://en.wikisource.org/wiki/Scrambles_amongst_the_Alps</dc:source>
+		<!-- text and images of the fifth edition -->
+		<dc:source>https://archive.org/details/scramblesamongst0000unse_l2h0</dc:source>
+		<!-- foldout maps at the end of the book, scans from the first edition -->
+		<dc:source>https://archive.org/details/scramblesamongst00whym</dc:source>
+		<meta property="se:production-notes">
+			This ebook is intended to match the fifth edition of Scrambles Amongst the Alps.
+
+			The transcription is based on a Wikisource transcription of the first edition, which was updated by the producer of this ebook to match the fifth edition. The Internet Archive scans were used as a reference.
+			The images inside the book were derived from the Internet Archive scans of the fifth edition.
+			The maps at the end of the book were derived from the Internet Archive scans of the first edition.
+		</meta>
 		<meta property="se:word-count">WORD_COUNT</meta>
 		<meta property="se:reading-ease.flesch">READING_EASE</meta>
-		<meta property="se:url.encyclopedia.wikipedia">EBOOK_WIKI_URL</meta>
 		<meta property="se:url.vcs.github">https://github.com/standardebooks/edward-whymper_scrambles-amongst-the-alps-in-the-years-1860-69</meta>
 		<dc:creator id="author">Edward Whymper</dc:creator>
 		<meta property="file-as" refines="#author">Whymper, Edward</meta>
-		<meta property="se:name.person.full-name" refines="#author">CONTRIBUTOR_FULL_NAME</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Edward_Whymper</meta>
-		<meta property="se:url.authority.nacoaf" refines="#author">CONTRIBUTOR_NACOAF_URI</meta>
+		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n84228331</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">ann</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">ill</meta>
+		<meta property="role" refines="#author" scheme="marc:relators">wpr</meta>
 		<dc:contributor id="artist">John Ferguson Weir</dc:contributor>
 		<meta property="file-as" refines="#artist">Weir, John Ferguson</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#artist">https://en.wikipedia.org/wiki/John_Ferguson_Weir</meta>
 		<meta property="se:url.authority.nacoaf" refines="#artist">http://id.loc.gov/authorities/names/n86836118</meta>
 		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
-		<dc:contributor id="transcriber-1">TRANSCRIBER</dc:contributor>
-		<meta property="file-as" refines="#transcriber-1">TRANSCRIBER_SORT</meta>
-		<meta property="se:url.homepage" refines="#transcriber-1">TRANSCRIBER_URL</meta>
+		<dc:contributor id="transcriber-1">Wikisource</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Wikisource</meta>
+		<meta property="se:url.homepage" refines="#transcriber-1">https://en.wikisource.org</meta>
+		<meta property="se:url.encyclopedia.wikipedia" refines="#transcriber-1">https://en.wikipedia.org/wiki/Wikisource</meta>
 		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
-		<dc:contributor id="producer-1">PRODUCER</dc:contributor>
-		<meta property="file-as" refines="#producer-1">PRODUCER_SORT</meta>
-		<meta property="se:url.homepage" refines="#producer-1">PRODUCER_URL</meta>
+		<dc:contributor id="producer-1">Gijs van Tulder</dc:contributor>
+		<meta property="file-as" refines="#producer-1">van Tulder, Gijs</meta>
+		<meta property="se:url.homepage" refines="#producer-1">https://www.vantulder.net/</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">trc</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">wat</meta>
 	</metadata>
 	<manifest>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
