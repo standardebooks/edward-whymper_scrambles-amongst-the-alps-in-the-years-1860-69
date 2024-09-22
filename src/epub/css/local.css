@@ -171,13 +171,28 @@ figure.medium img{
 }
 
 @supports(display: flex){
+	/* Restrict height of all images to keep image + caption on one page. */
+	figure:not(:has(figure)){
+		display: flex;
+		flex-direction: column;
+		max-height: calc(100vh - 2em);
+	}
+
+	figure img{
+		min-height: 0;
+		object-fit: contain;
+	}
+
+	/* Stretch full-page images to fill page, but keep room for caption. */
 	figure.full-page{
 		display: flex;
 		flex-direction: column;
+		height: calc(100vh - 2em);
 	}
 
 	figure.full-page img{
 		height: 100vh;
+		min-height: 0;
 		object-fit: contain;
 	}
 }
