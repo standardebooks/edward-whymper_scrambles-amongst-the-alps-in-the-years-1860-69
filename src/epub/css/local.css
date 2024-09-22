@@ -244,6 +244,7 @@ table span.ditto::before{
 	content: "  ”";
 	display: inline-block;
 	visibility: initial;
+	white-space: nowrap;
 	width: 0;
 }
 
@@ -261,7 +262,7 @@ table span.ditto.short::before{
 #chapter-3 > table:nth-of-type(1) td{
 	padding-bottom: 0.1em;
 	padding-right: 0.5em;
-	vertical-align: top;
+	vertical-align: bottom;
 }
 
 #chapter-3 > table:nth-of-type(1) th{
@@ -273,28 +274,34 @@ table span.ditto.short::before{
 	text-indent: 1em;
 }
 
-#chapter-3 > table:nth-of-type(1) tbody:nth-child(2) tr.total th{
-	text-align: right;
-}
-
 #chapter-3 > table:nth-of-type(1) th:first-child{
 	max-width: 30em;
 	max-width: 60ch;
 }
 
-td.distance{
+#chapter-3 > table:nth-of-type(1) td:nth-last-child(2){
+	font-variant-numeric: tabular-nums;
 	padding-left: 0.5em;
 	text-align: right;
 	white-space: nowrap;
 	word-break: keep-all;
 }
 
-td.ditto{
+#chapter-3 > table:nth-of-type(1) td:last-child{
 	text-align: center;
 }
 
-tr.total td.distance{
+#chapter-3 > table:nth-of-type(1) tbody:nth-child(2) tr:last-child td:nth-last-child(2),
+#chapter-3 > table:nth-of-type(1) tbody:nth-child(3) tr:last-child td:nth-last-child(2){
 	border-top: 1px solid #000;
+}
+
+#chapter-3 > table:nth-of-type(1) span.ditto:nth-of-type(1)::before{
+	content: "      ”      ”";
+}
+
+#chapter-3 > table:nth-of-type(1) span.ditto:nth-of-type(2)::before{
+	content: "    ”";
 }
 
 /* Second table in Chapter 3. */
@@ -306,6 +313,8 @@ tr.total td.distance{
 #figure-33 table{
 	border-spacing: 0;
 	break-inside: avoid;
+	font-size: 0.8em;
+	margin: 0 auto;
 }
 
 #figure-33 th,
@@ -319,6 +328,7 @@ tr.total td.distance{
 }
 
 #figure-33 td{
+	font-variant-numeric: tabular-nums;
 	text-align: center;
 	white-space: nowrap;
 }
