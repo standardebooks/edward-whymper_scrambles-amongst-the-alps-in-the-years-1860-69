@@ -293,37 +293,37 @@ tr.total td.distance{
 }
 
 /* Second table in Chapter 3. */
-#chapter-3-table-2 div{
+#figure-33 div{
 	columns: 2;
 	margin: 0.5em 0;
 }
 
-#chapter-3-table-2 table{
+#figure-33 table{
 	border-spacing: 0;
 	break-inside: avoid;
 }
 
-#chapter-3-table-2 th,
-#chapter-3-table-2 td{
+#figure-33 th,
+#figure-33 td{
 	padding: 0.1em 0.5em;
 }
 
-#chapter-3-table-2 th{
+#figure-33 th{
 	font-weight: normal;
 	text-align: initial;
 }
 
-#chapter-3-table-2 td{
+#figure-33 td{
 	text-align: center;
 	white-space: nowrap;
 }
 
-#chapter-3-table-2 thead th{
+#figure-33 thead th{
 	padding-bottom: 0.3em;
 	text-align: center;
 }
 
-#chapter-3-table-2 p{
+#figure-33 p{
 	text-indent: none;
 }
 
