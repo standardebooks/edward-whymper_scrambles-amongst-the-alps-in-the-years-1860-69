@@ -17,11 +17,7 @@
 	display: none;
 }
 
-[epub|type~="z3998:verse"] p + p{
-	margin-top: 1em;
-}
-
-/* Poem indentation */
+/* Poetry indentation */
 p span.i1{
 	padding-left: 2em;
 	text-indent: -1em;
@@ -42,6 +38,7 @@ p span.i4{
 	text-indent: -1em;
 }
 
+/* Temperatures */
 [epub|type~="se:temperature"]{
 	font-variant: all-small-caps;
 }
@@ -53,19 +50,10 @@ p span.i4{
 	-epub-hyphens: none;
 }
 
-[epub|type~="epigraph"] em,
-[epub|type~="epigraph"] i{
-	font-style: normal;
-}
-
 [epub|type~="epigraph"] cite{
 	font-style: normal;
 	font-variant: small-caps;
 	margin-top: 1em;
-}
-
-[epub|type~="epigraph"] cite i{
-	font-style: italic;
 }
 /* End all epigraphs */
 
@@ -96,15 +84,10 @@ section[epub|type~="epigraph"] > *{
 	section[epub|type~="epigraph"] > *{
 		margin: 0;
 	}
-
-	section[epub|type~="epigraph"] > * + *{
-		margin-top: 3em;
-	}
 }
 /* End full-page epigraphs */
 
 /* Epigraphs in section headers */
-article > header [epub|type~="epigraph"],
 section > header [epub|type~="epigraph"]{
 	display: inline-block;
 	margin: auto;
@@ -112,37 +95,47 @@ section > header [epub|type~="epigraph"]{
 	text-align: initial;
 }
 
-article > header [epub|type~="epigraph"] + *,
 section > header [epub|type~="epigraph"] + *{
 	margin-top: 3em;
 }
 
 @supports(display: table){
-	article > header [epub|type~="epigraph"],
 	section > header [epub|type~="epigraph"]{
 		display: table;
 	}
 }
 /* End epigraphs in section headers */
 
-footer{
-	margin-top: 1em;
-	text-align: right;
-}
-
+/* Figures */
 figure{
+	break-inside: avoid;
 	clear: both;
+	margin: 1em 40px;
+	text-align: center;
 }
 
-#halftitlepage figure{
-	margin: 1em auto;
-	max-width: 30%;
+figure img{
+	display: block;
+	margin: auto;
+	max-width: 100%;
 }
 
-#halftitlepage figure img{
-	max-height: 40vh;
+figcaption{
+	font-size: .75em;
+	font-style: italic;
+	margin: 1em;
 }
 
+figcaption i{
+	font-style: normal;
+}
+
+/* Nested figures */
+figure figure{
+	margin: 0 0 0.5em 0;
+}
+
+/* Figure sizes and placement */
 figure.full-page{
 	break-after: page;
 	break-before: page;
@@ -189,41 +182,14 @@ figure.medium img{
 	}
 }
 
-/* If the image is meant to be aligned block-level with the text, use this selector... */
-figure{
-	break-inside: avoid;
-	margin: 1em 40px;
-	text-align: center;
+/* Figure on halftitlepage */
+#halftitlepage figure{
+	margin: 1em auto;
+	max-width: 30%;
 }
 
-/* In all cases, also include the below styles */
-figure{
-	break-inside: avoid;
-}
-
-figure img{
-	display: block;
-	margin: auto;
-	max-width: 100%;
-}
-
-figcaption{
-	font-size: .75em;
-	font-style: italic;
-	margin: 1em;
-}
-
-figcaption p + p{
-	text-indent: 0;
-}
-
-figcaption i{
-	font-style: normal;
-}
-
-/* Nested figures */
-figure figure{
-	margin: 0 0 0.5em 0;
+#halftitlepage figure img{
+	max-height: 40vh;
 }
 
 /* Smaller figure at the beginning of the chapter. */
@@ -231,6 +197,27 @@ header + figure,
 hgroup + figure{
 	margin: 1em auto;
 	max-width: 70%;
+}
+
+/* Headers of subsections as small-caps. */
+section section header p{
+	font-variant: small-caps;
+	margin: 2em 0 1em 0;
+	text-align: initial;
+}
+
+section section header + p{
+	margin-top: 0;
+}
+
+/* Preface footer */
+#preface-1 footer{
+	margin-top: 1em;
+	text-align: right;
+}
+
+#preface-1 footer time{
+	font-style: italic;
 }
 
 /* Note at the end of Chapter 3 */
@@ -241,6 +228,16 @@ section aside{
 
 section > aside > header + *{
 	margin-top: 1.5em;
+}
+
+/* Subsections in Chapter 6 */
+#chapter-6 section{
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+#chapter-6 section p:first-child{
+	text-indent: 1em;
 }
 
 /* Shared table CSS */
@@ -386,29 +383,6 @@ table span.ditto.short::before{
 #chapter-11 td:nth-child(5){
 	text-align: center;
 	vertical-align: bottom;
-}
-
-#preface-1 footer time{
-	font-style: italic;
-}
-
-section section header p{
-	font-variant: small-caps;
-	margin: 2em 0 1em 0;
-	text-align: initial;
-}
-
-section section header + p{
-	margin-top: 0;
-}
-
-#chapter-6 section{
-	margin-bottom: 1em;
-	margin-top: 1em;
-}
-
-#chapter-6 section p:first-child{
-	text-indent: 1em;
 }
 
 /* Appendix D and E */
@@ -593,6 +567,7 @@ section section header + p{
 	white-space: pre;
 }
 
+/* Handwritten letter */
 #note-203 img{
 	max-width: 90%;
 }
