@@ -160,6 +160,16 @@ figcaption p + p{
 	margin-left: 7em;
 }
 
+/* Note at the end of Chapter 3 */
+section aside{
+	font-size: .75em;
+	margin: 1.5em auto;
+}
+
+section > aside > header + *{
+	margin-top: 1.5em;
+}
+
 #preface-2 section header p{
 	font-variant: small-caps;
 	margin: 2em 0 1em 0;
