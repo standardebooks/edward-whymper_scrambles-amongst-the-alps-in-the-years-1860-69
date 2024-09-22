@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<se-lint-ignore>
+	<file path="appendix-d.xhtml">
+		<ignore>
+			<code>t-001</code>
+			<reason>The table uses a series of non-breaking spaces to separate ditto marks.</reason>
+		</ignore>
+		<ignore>
+			<code>t-041</code>
+			<reason>The table uses stand-alone question marks to indicate missing or uncertain data.</reason>
+		</ignore>
+	</file>
+	<file path="appendix-e.xhtml">
+		<ignore>
+			<code>t-041</code>
+			<reason>The table uses stand-alone question marks to indicate missing or uncertain data.</reason>
+		</ignore>
+	</file>
+	<file path="chapter-3.xhtml">
+		<ignore>
+			<code>c-014</code>
+			<reason>The first table is formatted as part of the text, so it should not get an extra margin.</reason>
+		</ignore>
+		<ignore>
+			<code>y-019</code>
+			<reason>The first table starts with an opening “, which is closed by ” at the end of the following paragraph.</reason>
+		</ignore>
+	</file>
+	<file path="chapter-16.xhtml">
+		<ignore>
+			<code>t-003</code>
+			<reason>The text between § 1 and § 5 uses a complex series of opening and closing “ ”.</reason>
+		</ignore>
+		<ignore>
+			<code>t-051</code>
+			<reason>The text between § 1 and § 5 uses a complex series of opening and closing “ ”.</reason>
+		</ignore>
+		<ignore>
+			<code>y-019</code>
+			<reason>The text between § 1 and § 5 uses a complex series of opening and closing “ ”.</reason>
+		</ignore>
+	</file>
+	<file path="endnotes.xhtml">
+		<ignore>
+			<code>t-001</code>
+			<reason>The table uses a series of non-breaking spaces to separate ditto marks.</reason>
+		</ignore>
+	</file>
+	<file path="*.xhtml">
+		<ignore>
+			<code>s-041</code>
+			<reason>Some figcaptions contain endnotes and other details that should not be shown in the LoI. For nested figures, only the parent figure is included in the LoI.</reason>
+		</ignore>
+	</file>
+</se-lint-ignore>
