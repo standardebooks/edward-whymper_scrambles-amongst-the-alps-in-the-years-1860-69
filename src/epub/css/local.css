@@ -321,6 +321,50 @@ tr.total td.distance{
 	text-indent: 1em;
 }
 
+/* Appendix D and E */
+table.ascents{
+	border-bottom: 2px solid #000;
+	border-spacing: 0;
+	border-top: 2px solid #000;
+	font-size: 0.8em;
+}
+
+table.ascents th,
+table.ascents td{
+	font-weight: normal;
+	padding-top: 0.6em;
+	text-align: initial;
+	vertical-align: top;
+}
+
+table.ascents thead th{
+	padding-bottom: 0.6em;
+}
+
+table.ascents thead th{
+	vertical-align: bottom;
+}
+
+table.ascents tbody tr:first-child th,
+table.ascents tbody tr:first-child td{
+	border-top: 1px solid #000;
+}
+
+table.ascents tbody tr:last-child th,
+table.ascents tbody tr:last-child td{
+	padding-bottom: 0.6em;
+}
+
+table.ascents .number{
+	text-align: center;
+}
+
+table.ascents .date,
+table.ascents .names,
+table.ascents .height{
+	white-space: nowrap;
+}
+
 #note-232 img{
 	max-width: 90%;
 }
