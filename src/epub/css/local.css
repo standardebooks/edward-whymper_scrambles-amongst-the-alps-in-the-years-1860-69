@@ -227,6 +227,41 @@ tr.total td.distance{
 	border-top: 1px solid #000;
 }
 
+/* Second table in Chapter 3. */
+#chapter-3-table-2 div{
+	columns: 2;
+	margin: 0.5em 0;
+}
+
+#chapter-3-table-2 table{
+	border-spacing: 0;
+	break-inside: avoid;
+}
+
+#chapter-3-table-2 th,
+#chapter-3-table-2 td{
+	padding: 0.1em 0.5em;
+}
+
+#chapter-3-table-2 th{
+	font-weight: normal;
+	text-align: initial;
+}
+
+#chapter-3-table-2 td{
+	text-align: center;
+	white-space: nowrap;
+}
+
+#chapter-3-table-2 thead th{
+	padding-bottom: 0.3em;
+	text-align: center;
+}
+
+#chapter-3-table-2 p{
+	text-indent: none;
+}
+
 #preface-2 section header p{
 	font-variant: small-caps;
 	margin: 2em 0 1em 0;
