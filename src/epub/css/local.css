@@ -126,6 +126,19 @@ footer{
 	text-align: right;
 }
 
+figure{
+	clear: both;
+}
+
+#halftitlepage figure{
+	margin: 1em auto;
+	max-width: 30%;
+}
+
+#halftitlepage figure img{
+	max-height: 40vh;
+}
+
 figure.full-page{
 	break-after: page;
 	break-before: page;
@@ -145,6 +158,19 @@ figure.right{
 	float: right;
 	margin: 0.5em 0 0.5em 0.5em;
 	width: 45%;
+}
+
+figure.small{
+	width: 30%;
+}
+
+figure.medium{
+	margin: 1em auto;
+	max-width: 70%;
+}
+
+figure.medium img{
+	max-height: 45vh;
 }
 
 @supports(display: flex){
@@ -185,6 +211,18 @@ figcaption{
 
 figcaption p + p{
 	text-indent: 0;
+}
+
+/* Nested figures */
+figure figure{
+	margin: 0 0 0.5em 0;
+}
+
+/* Smaller figure at the beginning of the chapter. */
+header + figure,
+hgroup + figure{
+	margin: 1em auto;
+	max-width: 70%;
 }
 
 /* Note at the end of Chapter 3 */
