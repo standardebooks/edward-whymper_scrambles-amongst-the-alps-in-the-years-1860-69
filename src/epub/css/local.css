@@ -322,40 +322,40 @@ table span.ditto.short::before{
 }
 
 /* Second table in Chapter 3. */
-#figure-33 div{
+#figure-32 div{
 	columns: 2;
 	margin: 0.5em 0;
 }
 
-#figure-33 table{
+#figure-32 table{
 	border-spacing: 0;
 	break-inside: avoid;
 	font-size: 0.8em;
 	margin: 0 auto;
 }
 
-#figure-33 th,
-#figure-33 td{
+#figure-32 th,
+#figure-32 td{
 	padding: 0.1em 0.5em;
 }
 
-#figure-33 th{
+#figure-32 th{
 	font-weight: normal;
 	text-align: initial;
 }
 
-#figure-33 td{
+#figure-32 td{
 	font-variant-numeric: tabular-nums;
 	text-align: center;
 	white-space: nowrap;
 }
 
-#figure-33 thead th{
+#figure-32 thead th{
 	padding-bottom: 0.3em;
 	text-align: center;
 }
 
-#figure-33 p{
+#figure-32 p{
 	text-indent: none;
 }
 
