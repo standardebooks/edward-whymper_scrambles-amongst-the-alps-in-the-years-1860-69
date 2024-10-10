@@ -565,8 +565,9 @@ table span.ditto.short::before{
 	max-width: 50em;
 }
 
-#note-53 th{
-	text-align: center;
+#note-53 th,
+#note-53 td{
+	text-align: right;
 }
 
 #note-53 tbody tr:first-child th,
@@ -589,11 +590,6 @@ table span.ditto.short::before{
 #note-53 thead tr:nth-child(2) th:nth-child(6),
 #note-53 tbody th:first-child{
 	text-align: center;
-}
-
-#note-53 th,
-#note-53 td{
-	text-align: right;
 }
 
 #note-53 tbody:nth-child(2) td[rowspan],
