@@ -5,16 +5,6 @@
 			<code>t-001</code>
 			<reason>The table uses a series of non-breaking spaces to separate ditto marks.</reason>
 		</ignore>
-		<ignore>
-			<code>t-041</code>
-			<reason>The table uses stand-alone question marks to indicate missing or uncertain data.</reason>
-		</ignore>
-	</file>
-	<file path="appendix-e.xhtml">
-		<ignore>
-			<code>t-041</code>
-			<reason>The table uses stand-alone question marks to indicate missing or uncertain data.</reason>
-		</ignore>
 	</file>
 	<file path="chapter-3.xhtml">
 		<ignore>
