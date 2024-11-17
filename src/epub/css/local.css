@@ -139,7 +139,7 @@ figcaption i{
 
 /* Nested figures */
 figure figure{
-	margin: 0 0 0.5em 0;
+	margin: 0 0 .5em 0;
 }
 
 /* Figure sizes and placement */
@@ -154,13 +154,13 @@ figure.full-page{
 
 figure.left{
 	float: left;
-	margin: 0.5em 0.5em 0.5em 0;
+	margin: .5em .5em .5em 0;
 	width: 45%;
 }
 
 figure.right{
 	float: right;
-	margin: 0.5em 0 0.5em 0.5em;
+	margin: .5em 0 .5em .5em;
 	width: 45%;
 }
 
@@ -277,8 +277,8 @@ table span.ditto.short::before{
 
 #chapter-3 > table:nth-of-type(1) th,
 #chapter-3 > table:nth-of-type(1) td{
-	padding-bottom: 0.1em;
-	padding-right: 0.5em;
+	padding-bottom: .1em;
+	padding-right: .5em;
 	vertical-align: bottom;
 }
 
@@ -298,7 +298,7 @@ table span.ditto.short::before{
 
 #chapter-3 > table:nth-of-type(1) td:nth-last-child(2){
 	font-variant-numeric: tabular-nums;
-	padding-left: 0.5em;
+	padding-left: .5em;
 	text-align: right;
 	white-space: nowrap;
 	word-break: keep-all;
@@ -324,19 +324,19 @@ table span.ditto.short::before{
 /* Second table in Chapter 3. */
 #figure-32 div{
 	columns: 2;
-	margin: 0.5em 0;
+	margin: .5em 0;
 }
 
 #figure-32 table{
 	border-spacing: 0;
 	break-inside: avoid;
-	font-size: 0.8em;
+	font-size: .8em;
 	margin: 0 auto;
 }
 
 #figure-32 th,
 #figure-32 td{
-	padding: 0.1em 0.5em;
+	padding: .1em .5em;
 }
 
 #figure-32 th{
@@ -351,7 +351,7 @@ table span.ditto.short::before{
 }
 
 #figure-32 thead th{
-	padding-bottom: 0.3em;
+	padding-bottom: .3em;
 	text-align: center;
 }
 
@@ -363,23 +363,23 @@ table span.ditto.short::before{
 #chapter-11 table{
 	border-spacing: 0;
 	break-inside: avoid;
-	font-size: 0.8em;
+	font-size: .8em;
 	margin: 1em auto;
 }
 
 #chapter-11 th{
 	font-weight: normal;
-	padding: 0.1em;
+	padding: .1em;
 	vertical-align: bottom;
 }
 
 #chapter-11 td{
-	padding: 0.1em;
+	padding: .1em;
 	vertical-align: top;
 }
 
 #chapter-11 td:nth-child(1){
-	padding-right: 0.5em;
+	padding-right: .5em;
 	text-align: right;
 }
 
@@ -403,7 +403,7 @@ table span.ditto.short::before{
 	border-bottom: 2px solid;
 	border-spacing: 0;
 	border-top: 2px solid;
-	font-size: 0.8em;
+	font-size: .8em;
 }
 
 #appendix-d th,
@@ -411,14 +411,14 @@ table span.ditto.short::before{
 #appendix-e th,
 #appendix-e td{
 	font-weight: normal;
-	padding: 0.3em;
+	padding: .3em;
 	text-align: initial;
 	vertical-align: top;
 }
 
 #appendix-d thead th,
 #appendix-e thead th{
-	padding: 0.6em 0.3em;
+	padding: .6em .3em;
 	vertical-align: bottom;
 }
 
@@ -427,12 +427,12 @@ table span.ditto.short::before{
 #appendix-e tbody tr:first-child th,
 #appendix-e tbody tr:first-child td{
 	border-top: 1px solid;
-	padding-top: 0.6em;
+	padding-top: .6em;
 }
 
 #appendix-d tbody tr:last-child td,
 #appendix-e tbody tr:last-child td{
-	padding-bottom: 0.6em;
+	padding-bottom: .6em;
 }
 
 #appendix-d td:nth-child(1),
@@ -500,7 +500,7 @@ table span.ditto.short::before{
 #note-51 table,
 #note-52 table,
 #note-53 table{
-	font-size: 0.8em;
+	font-size: .8em;
 	margin: 1em auto;
 }
 
@@ -512,7 +512,7 @@ table span.ditto.short::before{
 #note-53 td{
 	font-variant-numeric: tabular-nums;
 	font-weight: normal;
-	padding: 0.1em 0.5em;
+	padding: .1em .5em;
 	text-align: initial;
 }
 
@@ -577,12 +577,12 @@ table span.ditto.short::before{
 
 #note-53 tr:first-child th,
 #note-53 tr:first-child td{
-	padding-top: 0.5em;
+	padding-top: .5em;
 }
 
 #note-53 tr:last-child th,
 #note-53 tr:last-child td{
-	padding-bottom: 0.5em;
+	padding-bottom: .5em;
 }
 
 #note-53 thead tr:first-child th,
