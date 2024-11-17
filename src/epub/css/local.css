@@ -128,7 +128,7 @@ figure img{
 }
 
 figcaption{
-	font-size: .75em;
+	font-size: smaller;
 	font-style: italic;
 	margin: 1em;
 }
@@ -234,7 +234,7 @@ section section header + p{
 
 /* Note at the end of Chapter 3 */
 section aside{
-	font-size: .75em;
+	font-size: smaller;
 	margin: 1.5em auto;
 }
 
@@ -330,7 +330,7 @@ table span.ditto.short::before{
 #figure-32 table{
 	border-spacing: 0;
 	break-inside: avoid;
-	font-size: .8em;
+	font-size: smaller;
 	margin: 0 auto;
 }
 
@@ -363,7 +363,7 @@ table span.ditto.short::before{
 #chapter-11 table{
 	border-spacing: 0;
 	break-inside: avoid;
-	font-size: .8em;
+	font-size: smaller;
 	margin: 1em auto;
 }
 
@@ -403,7 +403,7 @@ table span.ditto.short::before{
 	border-bottom: 2px solid;
 	border-spacing: 0;
 	border-top: 2px solid;
-	font-size: .8em;
+	font-size: smaller;
 }
 
 #appendix-d th,
@@ -500,7 +500,7 @@ table span.ditto.short::before{
 #note-51 table,
 #note-52 table,
 #note-53 table{
-	font-size: .8em;
+	font-size: smaller;
 	margin: 1em auto;
 }
 
