@@ -458,42 +458,19 @@ table span.ditto.short::before{
 	margin-left: 20px;
 }
 
-/* Ordered list in Appendix G */
-#appendix-g ol{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#appendix-g ol li{
+/* Numbered "remarks" in Appendix G */
+#appendix-g p:nth-of-type(n+13){
 	margin: 1em 0;
-	padding: 0;
+	text-indent: 0;
 }
 
-#appendix-g > ol{
-	counter-reset: appendix-g-ol-marker;
+#appendix-g p:nth-of-type(16){
+	margin: 1em 0 0 0;
 }
 
-#appendix-g > ol > li{
-	counter-increment: appendix-g-ol-marker;
-}
-
-#appendix-g > ol > li > p:first-child::before,
-#appendix-g > ol > li > ol:first-child > li:first-child > p:first-child::before{
-	content: counter(appendix-g-ol-marker) ". ";
-}
-
-#appendix-g ol ol{
-	counter-reset: appendix-g-ol-ol-marker;
-}
-
-#appendix-g ol ol li{
-	counter-increment: appendix-g-ol-ol-marker;
-}
-
-#appendix-g ol ol li p:first-child em:first-child::before{
-	content: "(" counter(appendix-g-ol-ol-marker, lower-alpha) ") ";
-	font-style: italic;
+#appendix-g p:nth-of-type(17){
+	margin: 0 0 1em 0;
+	text-indent: 1em;
 }
 
 /* Chapter 3, notes 51/52/53, table */
