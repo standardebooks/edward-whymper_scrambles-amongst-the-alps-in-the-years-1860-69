@@ -139,7 +139,7 @@ figcaption i{
 
 /* Nested figures */
 figure figure{
-	margin: 0 0 .5em 0;
+	margin: 0 0 1em 0;
 }
 
 /* Figure sizes and placement */
@@ -154,13 +154,13 @@ figure.full-page{
 
 figure.left{
 	float: left;
-	margin: .5em .5em .5em 0;
+	margin: 1em 1em 1em 0;
 	width: 45%;
 }
 
 figure.right{
 	float: right;
-	margin: .5em 0 .5em .5em;
+	margin: 1em 0 1em 1em;
 	width: 45%;
 }
 
@@ -208,12 +208,12 @@ section section header + p{
 }
 
 /* Preface footer */
-#preface-1 footer{
+footer{
 	margin-top: 1em;
 	text-align: right;
 }
 
-#preface-1 footer time{
+footer time{
 	font-style: italic;
 }
 
@@ -262,7 +262,6 @@ table span.ditto.short::before{
 
 #chapter-3 > table:nth-of-type(1) th,
 #chapter-3 > table:nth-of-type(1) td{
-	padding-bottom: .1em;
 	padding-right: .5em;
 	vertical-align: bottom;
 }
@@ -309,7 +308,7 @@ table span.ditto.short::before{
 /* Second table in Chapter 3. */
 #figure-32 div{
 	columns: 2;
-	margin: .5em 0;
+	margin: 1em 0;
 }
 
 #figure-32 table{
@@ -320,7 +319,7 @@ table span.ditto.short::before{
 
 #figure-32 th,
 #figure-32 td{
-	padding: .1em .5em;
+	padding: .5em;
 }
 
 #figure-32 th{
@@ -335,7 +334,7 @@ table span.ditto.short::before{
 }
 
 #figure-32 thead th{
-	padding-bottom: .3em;
+	font-variant: small-caps;
 	text-align: center;
 }
 
@@ -352,12 +351,10 @@ table span.ditto.short::before{
 
 #chapter-11 th{
 	font-weight: normal;
-	padding: .1em;
 	vertical-align: bottom;
 }
 
 #chapter-11 td{
-	padding: .1em;
 	vertical-align: top;
 }
 
@@ -393,14 +390,14 @@ table span.ditto.short::before{
 #appendix-e th,
 #appendix-e td{
 	font-weight: normal;
-	padding: .3em;
+	padding: .5em;
 	text-align: initial;
 	vertical-align: top;
 }
 
 #appendix-d thead th,
 #appendix-e thead th{
-	padding: .6em .3em;
+	padding: .5em;
 	vertical-align: bottom;
 }
 
@@ -409,12 +406,12 @@ table span.ditto.short::before{
 #appendix-e tbody tr:first-child th,
 #appendix-e tbody tr:first-child td{
 	border-top: 1px solid;
-	padding-top: .6em;
+	padding-top: .5em;
 }
 
 #appendix-d tbody tr:last-child td,
 #appendix-e tbody tr:last-child td{
-	padding-bottom: .6em;
+	padding-bottom: .5em;
 }
 
 #appendix-d td:nth-child(1),
@@ -440,19 +437,13 @@ table span.ditto.short::before{
 	margin-left: 20px;
 }
 
+#appendix-f hgroup p[epub|type~="title"]{
+	font-style: normal;
+}
+
 /* Numbered "remarks" in Appendix G */
-#appendix-g p:nth-of-type(n+13){
-	margin: 1em 0;
-	text-indent: 0;
-}
-
-#appendix-g p:nth-of-type(16){
-	margin: 1em 0 0 0;
-}
-
-#appendix-g p:nth-of-type(17){
-	margin: 0 0 1em 0;
-	text-indent: 1em;
+#appendix-g ol ol{
+	list-style: lower-alpha;
 }
 
 /* Chapter 3, notes 51/52/53, table */
@@ -470,7 +461,7 @@ table span.ditto.short::before{
 #note-53 td{
 	font-variant-numeric: tabular-nums;
 	font-weight: normal;
-	padding: .1em .5em;
+	padding: 0 .5em;
 	text-align: initial;
 }
 
@@ -483,7 +474,6 @@ table span.ditto.short::before{
 #note-51 td:nth-child(1){
 	padding-left: 0;
 	vertical-align: top;
-	width: 1.5em;
 }
 
 #note-51 tfoot th{
@@ -561,13 +551,15 @@ table span.ditto.short::before{
 
 #note-53 tbody:nth-child(2) td[rowspan]::before,
 #note-53 tbody:nth-child(3) td[rowspan]::before{
-	content: "|\A ";
+	content: "|";
+	display: block;
 	white-space: pre;
 }
 
 #note-53 tbody:nth-child(2) td[rowspan]::after,
 #note-53 tbody:nth-child(3) td[rowspan]::after{
-	content: "\A |";
+	content: "|";
+	display: block;
 	white-space: pre;
 }
 
