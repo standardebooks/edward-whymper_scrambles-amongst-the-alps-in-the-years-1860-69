@@ -31,11 +31,11 @@
 		<dc:title id="title">Scrambles Amongst the Alps in the Years 1860–69</dc:title>
 		<meta property="file-as" refines="#title">Scrambles Amongst the Alps in the Years 1860–69</meta>
 		<meta property="title-type" refines="#title">main</meta>
-		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years 1860–1869</meta>
-		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years Eighteen Sixty to Sixty-Nine</meta>
-		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years Eighteen Sixty to Eighteen Sixty-Nine</meta>
-		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years 1860-69</meta>
-		<meta property="dcterms:alternate" refines="#title">Scrambles Amongst the Alps in the Years 1860-1869</meta>
+		<meta property="dcterms:alternative" refines="#title">Scrambles Amongst the Alps in the Years 1860–1869</meta>
+		<meta property="dcterms:alternative" refines="#title">Scrambles Amongst the Alps in the Years Eighteen Sixty to Sixty-Nine</meta>
+		<meta property="dcterms:alternative" refines="#title">Scrambles Amongst the Alps in the Years Eighteen Sixty to Eighteen Sixty-Nine</meta>
+		<meta property="dcterms:alternative" refines="#title">Scrambles Amongst the Alps in the Years 1860-69</meta>
+		<meta property="dcterms:alternative" refines="#title">Scrambles Amongst the Alps in the Years 1860-1869</meta>
 		<dc:title id="title-short">Scrambles Amongst the Alps</dc:title>
 		<meta property="file-as" refines="#title-short">Scrambles Amongst the Alps</meta>
 		<meta property="title-type" refines="#title-short">short</meta>
