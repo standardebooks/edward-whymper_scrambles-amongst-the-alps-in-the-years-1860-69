@@ -2,20 +2,28 @@
 <se-lint-ignore>
 	<file path="chapter-3.xhtml">
 		<ignore code="c-014">
+			<line>68</line>
 			<reason>The first table is formatted as part of the text, so it should not get an extra margin.</reason>
 		</ignore>
 		<ignore code="y-019">
+			<line>117</line>
 			<reason>The first table starts with an opening “, which is closed by ” at the end of the following paragraph.</reason>
 		</ignore>
 	</file>
 	<file path="chapter-16.xhtml">
 		<ignore code="t-003">
+			<line>84</line>
+			<line>89</line>
 			<reason>The text between § 1 and § 5 uses a complex series of opening and closing “ ”.</reason>
 		</ignore>
 		<ignore code="t-051">
+			<line>84</line>
+			<line>89</line>
 			<reason>The text between § 1 and § 5 uses a complex series of opening and closing “ ”.</reason>
 		</ignore>
 		<ignore code="y-019">
+			<line>86</line>
+			<line>90</line>
 			<reason>The text between § 1 and § 5 uses a complex series of opening and closing “ ”.</reason>
 		</ignore>
 	</file>
