@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <se-lint-ignore>
+	<file path="appendix-e.xhtml">
+		<ignore code="t-041">
+			<reason>Matches are indicative of missing words.</reason>
+		</ignore>
+	</file>
 	<file path="chapter-3.xhtml">
 		<ignore code="c-014">
 			<line>68</line>
