@@ -58,7 +58,7 @@
 		<meta property="schema:genre">Memoir</meta>
 		<meta property="schema:genre">Nonfiction</meta>
 		<meta property="schema:genre">Travel</meta>
-		<dc:abstract>A classic in early mountaineering literature, describing the first ascent of the Matterhorn and other climbs in the Alps.</dc:abstract>
+		<meta property="schema:abstract">A classic in early mountaineering literature, describing the first ascent of the Matterhorn and other climbs in the Alps.</meta>
 		<dc:description>
 			&lt;p&gt;In &lt;i&gt;Scrambles Amongst the Alps&lt;/i&gt;, English author, illustrator, and mountaineer &lt;a href="https://standardebooks.org/ebooks/edward-whymper"&gt;Edward Whymper&lt;/a&gt; recounts his mountaineering adventures in the Alps, culminating in the historic first ascent of the Matterhorn in 1865. This expedition, and its tragic ending, marked the beginning of the silver age of alpinism, and Whymper’s book has since become a classic in early mountaineering literature.&lt;/p&gt;
 			&lt;p&gt;First published in 1871, the book presents an account of Whymper’s travels, combining the stories of his ascents with descriptions of French, Italian, and Swiss mountaineering culture. The book is illustrated with numerous engravings based on drawings made by the author during his expeditions.&lt;/p&gt;
